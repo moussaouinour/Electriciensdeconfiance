@@ -1,0 +1,206 @@
+body {
+    font-family: 'Inter' , 'sans-serif' ;
+}
+.unboarding-page .btn-primary {
+padding: 10px 20px;
+gap: 8px;
+width: 672px;
+height: 44px;
+background: #233876;
+border-radius: 8px;
+border: none;
+}
+.unboarding-page   .side-section {
+   background-color: #233876;
+    height : 100vh ;
+    min-width : 20%;
+}
+.unboarding-page .side-section  h5 {
+    
+font-weight: 600;
+font-size: 24px;
+line-height: 150%;
+color: #111928;
+
+}
+.unboarding-page .form-progress  h5 {
+    
+font-weight: bold;
+font-size: 24px;
+color: #111928;
+
+
+
+    
+            }
+
+.unboarding-page .side-section  .p-essai {
+   
+font-weight: 600;
+font-size: 18px;
+line-height: 150%;
+color: #C27803;
+            }
+            
+            .unboarding-page .side-section .card {
+                background: #F9FAFB;
+            }                    
+            
+            .unboarding-page .side-section  ul li {
+                display: inline-flex;
+                align-items: flex-start;
+  font-weight: 400;
+font-size: 14px;
+margin-bottom: 10px;
+color: #111928;
+            }
+            .unboarding-page .side-section  ul li i {
+color :#C27803 ;
+font-weight: bold;
+            }
+           
+
+
+
+.unboarding-page  .form-progress {
+   padding : 40px  10px;
+}
+.unboarding-page  h2{
+font-weight: 800;
+font-size: 24px;
+line-height: 125%;
+color: #111928;
+}
+.unboarding-page .form-progress .form-label {
+    
+font-weight: 500;
+font-size: 14px;
+line-height: 150%;
+color: #111928;
+
+}
+.unboarding-page .form-progress .steps span {
+  
+font-weight: 500;
+font-size: 14px;
+
+color: #233876;
+
+
+}
+
+.unboarding-page .form-progress .form-control {
+    
+background: #F9FAFB;
+border: 1px solid #D1D5DB;
+border-radius: 8px;
+}
+
+.unboarding-page .form-progress .form-control::placeholder {
+/* Input text */
+
+
+/* leading-tight/text-sm/font-normal */
+font-weight: 400;
+font-size: 14px;
+line-height: 125%;
+color: #6B7280;
+
+
+        }
+           
+.unboarding-page     .form-progress .span-color {
+
+    color: #C27803;
+}
+
+.unboarding-page .form-progress   .step {
+    display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+.unboarding-page .form-progress .step .step-number {
+font-weight: bold;
+
+margin-bottom: 5px; /* Espace entre le numéro et le texte */
+}
+.unboarding-page .form-progress  .step.completed .step-number {
+display: none; /* Masquer le numéro une fois terminé */
+}
+.unboarding-page .form-progress .step.completed::before {
+content: "\f058"; /* Icône badge-check */
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+color: #233876; /* Couleur pour l'icône de vérification */
+margin-right: 5px;
+}
+
+
+.unboarding-page  .form-progress p {
+font-weight: 400;
+font-size: 15px;
+line-height: 150%;
+color: #6B7280;
+}
+.unboarding-page     .form-progress .alert span {
+    font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color: #111928;
+}
+.unboarding-page      .form-progress .alert {
+    background: #FDFDEA;
+}
+.unboarding-page       .form-progress .icon-user-star {
+    color: #C27803;
+    margin : 12px 0 ;
+   font-size: 26px;
+}
+
+
+.unboarding-page   .options .option {
+    padding: 14px;
+background-color: #F9FAFB;
+margin-top :10px ;
+    cursor: pointer;
+    border-color : #dddddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.unboarding-page  .options .option:hover, .options .option.selected {
+    background-color: #e9ecef;
+}
+.unboarding-page   .steps .step {
+    font-weight: bold;
+    color: #6c757d;
+}
+.unboarding-page     .steps .step.active {
+    color: #0d6efd;
+}
+.border-black {
+border :2px solid  black !important; /* Force la bordure noire */
+}
+/* Styles pour les écrans mobiles (moins de 768px) */
+@media (min-width: 1200px) {
+.unboarding-page .side-section .card {
+
+padding :  14px ;
+} 
+.unboarding-page .side-section-content {
+padding : 0 40px ;
+}
+
+
+}
+@media (min-width: 800px) {
+
+
+.unboarding-page  .form-progress {
+margin : 0 auto ;
+}
+.unboarding-page  .form-progress {
+padding : 40px 0 ;
+}
+
+}

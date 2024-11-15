@@ -1,0 +1,425 @@
+
+
+
+.dashboard-page {
+    font-family: "Inter", sans-serif;
+    background:#f2f5f8;
+    color: #444444;
+  }
+  
+  .dashboard-page a {
+    
+    text-decoration: none;
+  }
+  
+  .dashboard-page a:hover {
+    color: #717ff5;
+    text-decoration: none;
+  }
+  
+  /*--------------------------------------------------------------
+  # Main
+  --------------------------------------------------------------*/
+  .dashboard-page #main {
+    margin-top: 60px;
+    padding: 20px 10px;
+    transition: all 0.3s;
+  }
+  
+  @media (max-width: 1199px) {
+    .dashboard-page #main {
+      padding: 20px 10px;
+    }
+  }
+  
+  /* Dropdown menus */
+  .dashboard-page .dropdown-menu {
+    border-radius: 4px;
+    padding: 10px 0;
+    animation-name: dropdown-animate;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    border: 0;
+    box-shadow: 0 5px 30px 0 rgba(82, 63, 105, 0.2);
+  }
+  
+  .dashboard-page .dropdown-menu .dropdown-header {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+  
+  
+  
+  .dashboard-page .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .dashboard-page .dropdown-menu .dropdown-item i {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 0;
+  }
+  
+  .dashboard-page .dropdown-menu .dropdown-item:hover {
+    background-color: #f6f9ff;
+  }
+  
+  @media (min-width: 768px) {
+    .dashboard-page .dropdown-menu-arrow::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      background: #fff;
+      position: absolute;
+      top: -7px;
+      right: 20px;
+      transform: rotate(45deg);
+      border-top: 1px solid #eaedf1;
+      border-left: 1px solid #eaedf1;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  .dashboard-page .logo {
+    line-height: 1;
+  }
+  
+  @media (min-width: 1200px) {
+    .dashboard-page .logo {
+      width: 280px;
+    }
+  }
+  
+  .dashboard-page .logo img {
+    max-height: 26px;
+    margin-right: 6px;
+  }
+  
+  .dashboard-page .logo span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #012970;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .dashboard-page .header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 80px;
+   border : 1px solid rgb(230, 230, 230) ;
+    background-color: #fff;
+    padding-left: 20px;
+   padding-right : 50px ;
+  }
+  
+  .dashboard-page .header .toggle-sidebar-btn {
+    font-size: 32px;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #012970;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header Nav
+  --------------------------------------------------------------*/
+  .dashboard-page .header-nav ul {
+    list-style: none;
+  }
+  
+  .dashboard-page .header-nav>ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dashboard-page .header-nav .nav-icon {
+    font-size: 22px;
+    color: #012970;
+    margin-right: 25px;
+    position: relative;
+  }
+  
+  
+  .dashboard-page .header-nav .nav-profile img {
+    max-height: 36px;
+  }
+  
+  .dashboard-page .header-nav .badge-number {
+    position: absolute;
+    inset: -2px -5px auto auto;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px 6px;
+  }
+  
+  
+  
+  .dashboard-page .header-nav .notifications .notification-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+    transition: 0.3s;
+  }
+  
+  .dashboard-page .header-nav .notifications .notification-item i {
+    margin: 0 20px 0 10px;
+    font-size: 24px;
+  }
+  
+  .dashboard-page .header-nav .notifications .notification-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-page .header-nav .notifications .notification-item p {
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #919191;
+  }
+  
+  
+  
+  .dashboard-page .header-nav .profile .dropdown-item {
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: 0.3s;
+  }
+  
+  .dashboard-page .header-nav .profile .dropdown-item i {
+    margin-right: 10px;
+    font-size: 18px;
+    line-height: 0;
+  }
+  
+  .dashboard-page .header-nav .profile .dropdown-item:hover {
+    background-color: #f6f9ff;
+  }
+  
+  /*--------------------------------------------------------------
+  # Sidebar
+  --------------------------------------------------------------*/
+  .dashboard-page .sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 30px 26px;
+    scrollbar-color: #aab7cf transparent;
+    border-right : 1px solid rgb(230, 230, 230) ;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 1199px) {
+    .dashboard-page .sidebar {
+      left: -300px;
+    }
+  }
+  
+  .dashboard-page .sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+  }
+  
+  .dashboard-page .sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .dashboard-page  #main {
+      margin-left: 260px;
+    }
+  }
+  
+  @media (max-width: 1199px) {
+     .toggle-sidebar .sidebar {
+      left: 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  
+   .toggle-sidebar {
+      margin-left: 0;
+    }
+  
+    .toggle-sidebar .sidebar {
+      left: -300px;
+    }
+  }
+  
+  .dashboard-page .sidebar-nav {
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .dashboard-page .sidebar-nav li {
+    padding: 12px;
+    margin: 0;
+    list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  text-align: left;
+  color :#B1B1B1 ;
+  
+  }
+  .dashboard-page .sidebar-nav li a i {
+    padding-right : 14px;
+    font-size: 22px ;
+  }
+  .dashboard-page .sidebar-nav li .active {
+    color : #233876 ;
+  }
+  
+  .dashboard-page .sidebar-nav .nav-item {
+    margin-bottom: 5px;
+  }
+  
+  .dashboard-page .sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+  }
+  
+  
+  
+  .dashboard-page .card {
+    border: none;
+    border-radius: 10px;
+  }
+  /* Cache la case à cocher */
+  .dashboard-page .toggle-switch input[type="checkbox"] {
+    display: none;
+  }
+  
+  /* Style du toggle en mode non coché (gris) */
+  .dashboard-page .toggle-switch label {
+    background-color: #DFEAF2;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Style du bouton du toggle */
+  .dashboard-page .toggle-switch label::after {
+    content: '';
+    background-color: white; /* Le bouton est toujours blanc */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    transition: 0.3s;
+  }
+  
+  /* Style lorsque le toggle est coché (fond bleu) */
+  .dashboard-page .toggle-switch input[type="checkbox"]:checked + label {
+    background-color: #007bff; /* Fond bleu */
+  }
+  
+  /* Position du bouton lorsque le toggle est coché */
+  .dashboard-page .toggle-switch input[type="checkbox"]:checked + label::after {
+    left: 27.5px;
+  }
+  
+  .dashboard-page .badge-number {
+   background-color: red;
+  }
+  
+  /* form */ 
+  .dashboard-page .right-side {
+    color :   #111928 ;
+  }
+  .dashboard-page .main h5 {
+    color : #111928 ;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  }
+  .dashboard-page .right-side .form-label  , h6{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+  }
+  .dashboard-page .right-side .form-control {
+    background-color: #F9FAFB;
+    border: 1px solid #D1D5DB;
+  }
+  .dashboard-page .right-side    .form-control::placeholder {
+    color: #ccc; /* Placeholder en gris clair */
+    font-style: italic; /* Italique */
+  }
+  .dashboard-page .right-side    .form-control {
+    color:#6B7280;
+    padding :10px ;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  
+  }
+  .dashboard-page .main .btn-edit {
+  background-color: #233876;
+  border : none ;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px  14px ;
+  
+  
+  }
+  .dashboard-page .main .btn-sm {
+    background-color: #233876 ;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  
+  
+  }
+  .dashboard-page .right-side p ,  .right-side ul li {
+  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  
+  color : #6B7280 ;
+  }
+  .dashboard-page .main .pg-1 {
+    color : #6B7280 ;
+  
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  
+  
+  }
